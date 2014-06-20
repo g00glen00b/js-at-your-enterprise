@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fronteers - JavaScript at your enterprise</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#040325">
+					<h1>JavaScript</h1>
+					<h4>at your enterprise</h4>
+					<p>
+						<small>Presentation by <a href="http://twitter.com/g00glen00b">@g00glen00b</a> &mdash; Consultant at <a href="http://twitter.com/optisnv">@OptisNV</a></small>
+					</p>
+				</section>
+
+				<section data-background="#040325">
+					<section>
+						<h2>JavaScript... it's everywhere!</h2>
+						<img src="img/stackoverflow.png" />
+					</section>
+					<section>
+						<h2>JavaScript... it's everywhere!</h2>
+						<img src="img/dzone.png" />
+					</section>
+					<section>
+						<h2>JavaScript... it's everywhere!</h2>
+						<img src="img/reddit.png" />
+					</section>
+					<section>
+						<h2>JavaScript... it's everywhere!</h2>
+						<ul>
+							<li>Dzone, Reddit, StackOverflow, ...</li>
+							<li>JavaScript is populair</li>
+							<li>Dagelijks nieuwe frameworks en libraries
+						</ul>
+					</section>
+				</section>
+
+				<section data-background="#040325">
+					<section>
+						<h2>Is it that good?</h2>
+						<ul>
+							<li>Grote vooruitgang laatste decennium</li>
+							<li>HTML5</li>
+							<li>Explosieve groei van frameworks and libraries</li>
+							<li>Application lifecycle tools (mede dankzij Node.js)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>HTML5</h2>
+						<ul style="list-style-type: none"><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li></ul>
+						<span style="position: absolute; left: 5%; top: 12%;font-size: 142%">Nieuwe elementen</span>
+						<span style="position: absolute; left: 71%; top: 97%;font-size: 57%">Local storage</span>
+						<span style="position: absolute; left: 58%; top: 69%;font-size: 73%">Local database</span>
+						<span style="position: absolute; left: 83%; top: 63%;font-size: 67%">Geolocation</span>
+						<span style="position: absolute; left: 21%; top: 68%;font-size: 67%">Video API</span>
+						<span style="position: absolute; left: 60%; top: 39%;font-size: 79%">Audio API</span>
+						<span style="position: absolute; left: 85%; top: 13%;font-size: 144%">Canvas</span>
+						<span style="position: absolute; left: 41%; top: 28%;font-size: 129%">WebGL</span>
+						<span style="position: absolute; left: 6%; top: 57%;font-size: 127%">File API</span>
+						<span style="position: absolute; left: 39%; top: 84%;font-size: 123%">WebSockets</span>
+						<span style="position: absolute; left: 71%;top: 25%;font-size: 89%">CSS3</span>
+					</section>
+
+					<section>
+						<h2>Nieuwe frameworks</h2>
+						<img src="img/frameworks.png" style="max-width: 95%;max-height: 95%;background: transparent;border: none;box-shadow: none;" />
+					</section>
+
+					<section>
+						<h2>Application lifecycle</h2>
+						<ol style="list-style-type: none;margin: 0;">
+						  <li style="float: left;display: block;width: 50%;box-sizing: border-box;padding: 1em;">
+						    <ul>
+						      <li>Yo</li>
+						      <li>Grunt</li>
+						      <li>Bower</li>
+						      <li>Component</li>
+						      <li>PhantomJS</li>
+						      <li>Karma</li>
+						      <li>QUnit</li>
+						      <li>Jasmine</li>
+						      <li>The intern</li>
+						      <li>...</li>
+						    </ul>
+						  </li>
+						  <li style="float: left;display: block;width: 50%;box-sizing: border-box;padding: 1em">
+						    <img src="img/alm.png" style="background: transparent;border: none;box-shadow: none;" />
+						  </li>
+						</ol>
+					</section>
+
+					<section>
+						<h2>The "developer" improved</h2>
+						<ul>
+							<li>Meer developers zijn op de hoogte van de DO en de DON'T's</li>
+							<li>Vergelijken met "===" en "!=="</li>
+							<li>Global namespace vermijden</li>
+							<li>Gebruik van closures</li>
+							<li>...</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background="#205368">
+					<section>
+						<h2>Wat met de rest van de wereld</h2>
+						<img src="img/enterprises.png" style="max-width: 100%;max-height: 100%;background: transparent;border: none;box-shadow: none;" />
+					</section>
+
+					<section>
+						<h2>Microsoft</h2>
+						<ul>
+							<li>Silverlight?</li>
+							<li>Node.js voor Windows Server</li>
+							<li>Internet Explorer &amp; HTML5 support</li>
+						</ul>
+						<a href="img/html5test.png"><img src="img/html5test.png" /></a>
+					</section>
+
+					<section>
+						<h2>Adobe</h2>
+						<ul>
+							<li>Flash voor Linux + Android?</li>
+							<li>Acquires Phonegap, platform voor mobile apps met HTML5 + CSS + JS</li>
+						</ul>
+					</section>
+
+          <section>
+            <h2>Java</h2>
+            <ul>
+              <li>JavaServer Faces (JSF)?</li>
+            </ul>
+            <img src="img/angularjsf.png" />
+            <span>JSF vs AngularJS</span>
+          </section>
+
+					<section>
+						<h2>Google</h2>
+						<ol style="list-style-type: none;margin: 0;">
+						  <li style="float: left;display: block;width: 66%;box-sizing: border-box;padding: 1em">
+    						<ul>
+    							<li>Google Web Toolkit?</li>
+    							<li>Enorm veel succes met AngularJS</li>
+    							<li>Dart</li>
+    						</ul>
+    					</li>
+    					<li style="float: left;display: block;width: 33%;box-sizing: border-box;padding: 1em;border-left: solid 1px rgba(255, 255, 255, .3)">
+    					  <img src="img/angularjs.png" style="max-width: 100%;max-height: 100%;background: transparent;border: none;box-shadow: none" />
+    					</li>
+    				</ol>
+					</section>
+
+					<section>
+						<h2>IBM</h2>
+						<ul>
+							<li>Lanceert cloud platform BlueMix met support voor Node.js + MongoDB</li>
+							<li>Ontwikkelt Node-red, een Node.js variant voor Apache Camel</li>
+							<li>Acquires Worklight, platform voor mobile apps met HTML5 + CSS + JS</li>
+						</ul>
+						<img src="img/bluemix.png" />
+					</section>
+
+					<section>
+						<h2>Mozilla</h2>
+						<ul>
+							<li>Research projecten zoals asm.js, Parallel JavaScript, ...</li>
+							<li>Samenwerking met Epic: Unreal engine in browser</li>
+							<li>Webmaker: Tutorials voor het maken van toepassingen op het web</li>
+						</ul>
+						<img src="img/epic.jpg" />
+					</section>
+
+					<section>
+						<h2>JFrog</h2>
+						<ul>
+							<li>Gekend van Artifactory</li>
+							<li>Nu ook voor Node.js packages</li>
+						</ul>
+						<img src="img/modulecounts.png" />
+					</section>
+					
+					<section>
+            <h2>Andere</h2>
+            <ol style="list-style-type: none;margin: 0;width: 120%;margin-left: -10%">
+              <li style="float: left;display: block;width: 50%;border-right: solid 1px rgba(255, 255, 255, .3);box-sizing: border-box;padding: 1em">
+                <h4 style="text-align: center">eBay - ql.io</h4>
+                <img src="img/qlio.png" style="max-width: 100%;max-height: 100%;background: transparent;border: none;box-shadow: none" />
+              </li>
+              <li style="float: left;display: block;width: 50%;box-sizing: border-box;padding: 1em">
+                <h4 style="text-align: center">Paypal - KrakenJS</h4>
+                <img src="img/krakenjs.png" style="max-width: 100%;max-height: 100%;background: transparent;border: none;box-shadow: none" />
+              </li>
+             </ol>
+          </section>
+				</section>
+				
+				<section data-background="#205368">
+				  <section>
+  				  <h2>How do we do it?</h2>
+  				  <h4>3 stappen</h4>
+  				  <ul style="list-style-type: none;width: 120%;margin: 0;margin-left: -10%">
+  				    <li style="float: left;display: block;width: 33%;border-right: solid 1px rgba(255, 255, 255, .3);box-sizing: border-box;padding: 1em;">
+  				      <h5 style="text-align: center;">
+  				        <span style="display: block;margin: 0 auto;background-color: rgba(255, 255, 255, .3); border-radius: 50%;padding: .5em;width: .8em;text-align: center;font-weight: 600;font-size: 1.2em;margin-bottom: .5em">1.</span>
+  				        RESTify your data
+  			        </h5>
+  			      </li>
+  				    <li style="float: left;display: block;width: 33%;border-right: solid 1px rgba(255, 255, 255, .3);box-sizing: border-box;padding: 1em;">
+  				      <h5 style="text-align: center;">
+                  <span style="display: block;margin: 0 auto;background-color: rgba(255, 255, 255, .3); border-radius: 50%;padding: .5em;width: .8em;text-align: center;font-weight: 600;font-size: 1.2em;margin-bottom: .5em">2.</span>
+                  Front-end herwerken
+                </h5>
+  			      </li>
+  				    <li style="float: left;display: block;width: 33%;box-sizing: border-box;padding: 1em;">
+  				      <h5 style="text-align: center;">
+                  <span style="display: block;margin: 0 auto;background-color: rgba(255, 255, 255, .3); border-radius: 50%;padding: .5em;width: .8em;text-align: center;font-weight: 600;font-size: 1.2em;margin-bottom: .5em">3.</span>
+                  Application lifecycle uitbreiden
+                </h5>
+  			      </li>
+  				  </ul>
+				  </section>
+				  
+				  <section>
+				    <h2>RESTify your data</h2>
+				    <ol style="list-style-type: none;margin: 0;width: 120%;margin-left: -10%">
+				      <li style="float: left;display: block;width: 60%;box-sizing: border-box;padding: 1em">
+    				    <ul>
+    				      <li>Business data via web services</li>
+    				      <li>JSON of XML?</li>
+  				        <li>Multi-channel approach (mobile?)</li>
+  				        <li>Eenvoudige integratie met frameworks</li>
+    				    </ul>
+  				    </li>
+  				    <li style="float: left;display: block;width: 40%;border-left: solid 1px rgba(255, 255, 255, .3);box-sizing: border-box;padding: 1em">
+                <img src="img/multi-channel.png" style="max-width: 100%;max-height: 100%;background: transparent;border: none;box-shadow: none" />
+              </li>
+            </ol>
+				  </section>
+				 
+				  <section>
+				    <h2>Front-end herwerken</h2>
+				    <ul>
+				      <li>Monoliet JS bestanden</li>
+				      <li>Hoe koppeling logica + HTML vermijden</li>
+				      <li>Structuur</li>
+				      <li>Testability</li>
+				      <li>Zijn daar design patterns voor?</li>
+				      <li class="fragment show">Model, View, Controller<ul>
+				        <li>HTML = view</li>
+				        <li>Logica = controller</li>
+				      </ul></li>
+				    </ul>
+				  </section>
+				  
+				  <section>
+				    <h2>Uitbreiden van application lifecycle</h2>
+				    <ol style="list-style-type: none;margin: 0;width: 120%;margin-left: -10%">
+				      <li style="float: left;display: block;width: 60%;box-sizing: border-box;padding: 1em">
+    				    <ul>
+    				      <li>Dependency management</li>
+    				      <li>Minification + compressing</li>
+    				      <li>Unit testing</li>
+    				      <li>Steeds meer tooling dankzij Node.js</li>
+    				      <li class="fragment">Yeoman<ul>
+                    <li>Yo: Project scaffolding</li>
+                    <li>Grunt: Task runner</li>
+                    <li>Bower: dependency management</li>
+                    <li>Kunnen afzonderlijk geïnstalleerd worden</li>
+                  </ul></li>
+    				    </ul>
+  				    </li>
+  				    <li style="float: left;display: block;width: 40%;box-sizing: border-box;padding: 1em">
+                <img src="img/yeoman.png" style="max-width: 100%;max-height: 100%;background: transparent;border: none;box-shadow: none" />
+              </li>
+            </ol>
+				  </section>
+			    
+			    <section>
+			      <h2>Uitbreiden van application lifecycle</h2>
+			      <h4>Test, 1, 2, 3...</h4>
+			      <ol style="list-style-type: none;margin: 0;width: 100%;margin-left: -10%">
+			        <li style="float: left;display: block;width: 70%;box-sizing: border-box;padding: 1em">
+    			      <ul>
+    			        <li>Test je JavaScript code</li>
+    			        <li>JavaScript testing frameworks:<ul>
+    			          <li>QUnit</li>
+    			          <li>Jasmine</li>
+    			        </ul></li>
+    			        <li>KarmaJS test runner<ul>
+    			          <li>Grunt plugin</li>
+    			          <li>Reporters</li>
+    			          <li>Browser</li>
+    			          <li>PhantomJS: Headless testen</li>
+    			        </ul></li>
+    			      </ul>
+  			      </li>
+  			      <li style="float: left;display: block;width: 30%;border-left: solid 1px rgba(255, 255, 255, .3);box-sizing: border-box;padding: 1em">
+                <img src="img/testing.png" style="max-width: 100%;max-height: 100%;background: transparent;border: none;box-shadow: none" />
+              </li>
+            </ol>
+			    </section>
+			    
+			    <section>
+			      <h2>Uitbreiden van application lifecycle</h2>
+			      <h4>Voorbeeld lifecycle</h4>
+			      <ol>
+			        <li>Start project: Project scaffolding met Yo</li>
+			        <li class="fragment">Development project:<ul>
+			          <li>Dependency management met Bower</li>
+			          <lI>Versionering van dependencies</lI>
+			          <li>Code quality + test coverage met Grunt</li>
+			        </ul></li>
+			        <li class="fragment">Deployment project: Deployment in cloud met Grunt</li>
+			        <li class="fragment">Continuous integration: Met Jenkins (of Travis CI)</li>
+			        <li class="fragment">Versioning: Git<ul>
+			          <li>Project kan herbruikt worden in andere projecten</li>
+			          <li>Tagging releases: Bower dependency versies</li>
+			        </ul></li>
+			      </ol>
+			    </section>
+			    
+			    <section>
+			      <h2>Toekomst</h2>
+			      <ul>
+			        <li>Met deze drie stappen ben je klaar voor de toekomst</li>
+			       <li>Node.js? Back-end aanpassen</li>
+			       <li>Mobile? Nieuwe app op basis van business services</li>
+		       </ul>
+			    </section>
+			    
+			    <section>
+			      <h2>Toekomst</h2>
+			      <h4>Get MEAN</h4>
+			      <ol style="list-style-type: none;margin: 0;width: 120%;margin-left: -10%">
+              <li style="float: left;display: block;width: 70%;box-sizing: border-box;padding: 1em">
+    			      <ul>
+    			        <li>Full JavaScript stack<ul>
+    			          <li>MongoDB: NoSQL database (JSON/BSON documenten)</li>
+    			          <li>Express: Web framework voor Node.js</li>
+    			          <li>AngularJS: Client-side MVC framework</li>
+    			          <li>Node.js: JavaScript platform</li>
+    			        </ul></li>
+    			        <li class="fragment show">Ook andere stacks bestaan:<ul>
+    			          <li>Meteor</li>
+    			          <li>Nodember</li>
+    			          <li>...</li>
+    			        </ul></li>
+    			      </ul>
+  			      </li>
+  			      <li style="float: left;display: block;width: 30%;box-sizing: border-box;padding: 1em; margin-top: -5em">
+  			        <img src="img/mean.png" style="max-width: 100%;max-height: 90%;background: transparent;border: none;box-shadow: none" />
+  			      </li>
+			    </section>
+			  </section>
+			  
+			  <section data-background="#205368">
+			    <h2>Demo</h2>
+			    <h5>Application lifecycle: Maven &amp; Grunt</h5>
+			    <img src="img/demo.png" style="background: transparent;border: none;box-shadow: none" />
+			  </section>
+			  
+			  <section data-background="#205368">
+  			    <h2>JavaScript in Industry</h2>
+  			    <img src="img/industry.png" style="max-width: 100%;max-height: 100%;background: transparent;border: none;box-shadow: none;" />
+			  </section>
+			  
+			  <section data-background="#38828b" style="color: #eee8d5" class="reveal-end">
+			    <style type="text/css">
+			      .reveal .reveal-end a:not(.image) {
+			        color: #f6e4b4;
+			      }
+			      
+			      .reveal .reveal-end a:not(.image):hover {
+			        text-decoration: underline;
+			      }
+			    </style>
+          <h1>The end</h1>
+          <h4>Questions?</h4>
+          <ul>
+            <li>Mail: <a href="mailto:me@g00glen00b.be">me@g00glen00b.be</a></li>
+            <li>Twitter: <a href="http://twitter.com/g00glen00b">@g00glen00b</a></li>
+            <li>Github: <a href="http://github.com/g00glen00b">g00glen00b</a></li>
+          </ul>
+          <br /><br />
+          <h6>Nu allemaal snel de uitslag van <a href="https://twitter.com/search?q=%23COLCIV" target="_blank">#COLCIV</a> <a href="https://twitter.com/search?q=%23wk2014" target="_blank">#WK2014</a> checken</h6>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: "moon", // available themes are in /css/theme
+				transition: "linear", // default/cube/page/concave/zoom/linear/fade/none
+				backgroundTransition: "slide",
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
